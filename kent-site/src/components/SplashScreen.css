@@ -4,7 +4,7 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: #ffffff;
+  background-color: #5a3a29;
   position: fixed;
   top: 0;
   left: 0;
@@ -13,8 +13,8 @@
 
 .splash-container {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 100vmin;
+  height: 100vmin;
   font-family: sans-serif;
   font-weight: bold;
 }
@@ -31,44 +31,44 @@
 .top-triangle {
   top: 0;
   left: 0;
-  border-left: 200px solid transparent;
-  border-right: 200px solid transparent;
-  border-top: 200px solid #5a3a29;
+  border-left: 50vmin solid transparent;
+  border-right: 50vmin solid transparent;
+  border-top: 50vmin solid #5a3a29;
 }
 
 .bottom-triangle {
   bottom: 0;
   left: 0;
-  border-left: 200px solid transparent;
-  border-right: 200px solid transparent;
-  border-bottom: 200px solid #5a3a29;
+  border-left: 50vmin solid transparent;
+  border-right: 50vmin solid transparent;
+  border-bottom: 50vmin solid #5a3a29;
 }
 
 .left-triangle {
   top: 0;
   left: 0;
-  border-top: 200px solid transparent;
-  border-bottom: 200px solid transparent;
-  border-left: 200px solid #ffffff;
+  border-top: 50vmin solid transparent;
+  border-bottom: 50vmin solid transparent;
+  border-left: 50vmin solid #ffffff;
 }
 
 .right-triangle {
   top: 0;
   right: 0;
-  border-top: 200px solid transparent;
-  border-bottom: 200px solid transparent;
-  border-right: 200px solid #ffffff;
+  border-top: 50vmin solid transparent;
+  border-bottom: 50vmin solid transparent;
+  border-right: 50vmin solid #ffffff;
 }
 
 .char {
   position: absolute;
-  font-size: 80px;
+  font-size: 20vmin;
   transform: translate(-50%, -50%);
 }
 
 .k {
   color: white;
-  top: 35%;
+  top: 25%;
   left: 50%;
 }
 
@@ -78,6 +78,7 @@
 .three {
   color: #5a3a29;
   top: 50%;
+  font-size: 25vmin;
 }
 
 .one {
@@ -89,15 +90,15 @@
 }
 
 .seven {
-  left: 65%;
+  left: 70%;
 }
 
 .three {
-  left: 80%;
+  left: 85%;
 }
 
 .h {
   color: white;
-  top: 65%;
+  top: 75%;
   left: 50%;
 }
