@@ -12,11 +12,22 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
   useEffect(() => {
     const tl = gsap.timeline({ onComplete });
 
+    // Entrance animation
     tl.fromTo(
       '.char',
       { opacity: 0, y: 20 },
-      { opacity: 1, y: 0, stagger: 0.2, duration: 0.5, ease: 'power3.out' }
-    ).to(splashScreenRef.current, { opacity: 0, duration: 1, delay: 1 });
+      { opacity: 1, y: 0, stagger: 0.1, duration: 0.5, ease: 'power3.out' },
+      'start'
+    );
+
+    // Exit animation
+    const exitDelay = 'start+=1.5';
+    tl.to('.k, .top-triangle', { y: '-100%', ease: 'power3.in', duration: 0.7 }, exitDelay)
+      .to('.h, .bottom-triangle', { y: '100%', ease: 'power3.in', duration: 0.7 }, exitDelay)
+      .to('.one, .eight, .left-triangle', { x: '-100%', ease: 'power3.in', duration: 0.7 }, exitDelay)
+      .to('.seven, .three, .right-triangle', { x: '100%', ease: 'power3.in', duration: 0.7 }, exitDelay)
+      .to(splashScreenRef.current, { opacity: 0, duration: 0.3 }, '>-0.3');
+
   }, [onComplete]);
 
   return (
